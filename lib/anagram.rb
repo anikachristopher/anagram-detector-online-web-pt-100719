@@ -9,12 +9,8 @@ class Anagram
   
   
   def match(array)
-  if self.match %w(some_word.split(" ") == array.split(" ")) 
-    return "match"
-  else 
-    return []
-  end  
-  end
+    array.select do |word|
+    if word.split("").sort == @word.split("").sort
   
 #     if word.match %w(some_word.split == ["anagrams"])
 #     return [matches]
