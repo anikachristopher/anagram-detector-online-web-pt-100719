@@ -10,7 +10,10 @@ class Anagram
   
   def match(array)
     array.select do |word|
-    if word.split("").sort == @word.split("").sort
+    if word.split("").sort == @word.split("").sort_word
+    end
+  end
+end
   
 #     if word.match %w(some_word.split == ["anagrams"])
 #     return [matches]
